@@ -1,1 +1,1 @@
-# LatticeStockDataClient
+# JobSearchPythonClient
