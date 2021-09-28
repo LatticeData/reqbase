@@ -6,7 +6,6 @@ orbs:
   # so you dont have to copy and paste it everywhere.
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/python
   python: circleci/python@1.2
-  slack: circleci/slack@4.4.2
 
 workflows:
   sample:  # This is the name of the workflow, feel free to change it to better match your workflow.
@@ -39,13 +38,4 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: python -m pytest
-      - slack/notify:
-          channel: 'C01456FJSPR'
-          event: fail
-          mentions: '@itsapoorvj'
-          template: basic_fail_1
-      - slack/notify:
-          channel: 'C01456FJSPR'
-          event: pass
-          template: success_tagged_deploy_1    
+          command: pytest
