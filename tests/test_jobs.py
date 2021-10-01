@@ -11,7 +11,7 @@ from jobsearch.jobs import (
     glassdoor,
     xing,
     stackoverflow,
-    ziprecruiter,
+   # ziprecruiter,
     monster,
     linkedin
 )
@@ -56,48 +56,41 @@ def test_craigslist_regions():
 
 def test_careerjet():
     query = "penetration tester"
-    location = "detroit"
-    response = careerjet(query,location)
+    response = careerjet(query)
     assert job_search(response)
 
 def test_dice():
     query = "penetration tester"
-    location = "detroit"
-    response = dice(query,location)
+    response = dice(query)
     assert job_search(response)
 
 def test_glassdoor():
     query = "penetration tester"
-    location = "detroit"
-    response = glassdoor(query,location)
+    response = glassdoor(query)
     assert job_search(response)
 
 def test_xing():
     query = "penetration tester"
-    location = "detroit"
-    response = xing(query,location)
+    response = xing(query)
     assert job_search(response)
 
 def test_stackoverflow():
     query = "penetration tester"
-    location = "detroit"
-    response = stackoverflow(query,location)
+    response = stackoverflow(query)
     assert job_search(response)
 
-def test_ziprecruiter():
-    query = "penetration tester"
-    location = "detroit"
-    response = ziprecruiter(query,location)
-    assert job_search(response)
+#def test_ziprecruiter():
+ #   query = "penetration tester"
+  #  location = "detroit"
+   # response = ziprecruiter(query,location)
+    #assert job_search(response)
 
 def test_monster():
     query = "penetration tester"
-    state = "CA"
-    response = monster(query,state)
+    response = monster(query)
     assert job_search(response)
 
 def test_linkedin():
     query = "penetration tester"
-    location = "detroit"
-    response = linkedin(query,location)
+    response = linkedin(query)
     assert job_search(response)

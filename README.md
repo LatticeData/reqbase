@@ -20,7 +20,6 @@ The comprehensive job search API, powered by Indeed, Simply Hired, Lawjobs, Mons
     - [Function: dice](#function-dice)
     - [Function: xing](#function-xing)
     - [Function: stackoverflow](#function-stackoverflow)
-    - [Function: ziprecruiter](#function-ziprecruiter)
     - [Function: monster](#function-monster)
     - [Function: linkedin](#function-linkedin)
 ## Overview
@@ -33,7 +32,7 @@ The easiest way to install this package is using pip:
 pip install lattice-stocks-data
 ```
 ### API Authentication
-To successfully use this library you will need an API key for the [Lattice Stock Market Data API](https://rapidapi.com/lattice-data-lattice-data-default/api/job-search4/) that powers it. Navigate to [RapidAPI](https://rapidapi.com/lattice-data-lattice-data-default/api/job-search4/) to sign up for a free API key and then save it to an environment variable called `STOCK_DATA_X_RAPID_API_KEY` in your environment. The library will automatically load that environment variable and use it to authenticate API calls made under the hood.
+To successfully use this library you will need an API key for the [Lattice Job Search API](https://rapidapi.com/lattice-data-lattice-data-default/api/job-search4/) that powers it. Navigate to [RapidAPI](https://rapidapi.com/lattice-data-lattice-data-default/api/job-search4/) to sign up for a free API key and then save it to an environment variable called `JOB_SEARCH_X_RAPID_API_KEY` in your environment. The library will automatically load that environment variable and use it to authenticate API calls made under the hood.
 
 ### Dependencies
 This library relies on the following Python libraries:
@@ -125,6 +124,7 @@ Returns the list of jobs available.
 
 ```
 ### Function: `craigslist_regions()`
+For the list of regions for craigslist.
 ```bash
 craigslist_regions()
 ```
@@ -137,9 +137,10 @@ Returns the list of regions available in craigslist.
 ```bash
 
 ```
-### Function: `lawjobs`
+### Function: `careerjet`
+Conducts a comprehensive search of jobs posted on Careerjet.com based on a free text search query.
 ```bash
-lawjobs(query)
+careerjet(query,location)
 ```
 #### Arguments:
 Name | Type | Description | Optional | Default Value
@@ -152,9 +153,10 @@ Returns the list of jobs available.
 ```bash
 
 ```
-### Function: `lawjobs`
+### Function: `dice`
+Conducts a comprehensive search of jobs posted on Dice.com based on a free text search query.
 ```bash
-lawjobs(query)
+dice(query)
 ```
 #### Arguments:
 Name | Type | Description | Optional | Default Value
@@ -167,5 +169,84 @@ Returns the list of jobs available.
 ```bash
 
 ```
+### Function: `glassdoor`
+Conducts a comprehensive search of jobs posted on Glassdoor.com based on a free text search query.
+```bash
+glassdoor(query)
+```
+#### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+`query` | `str` | Job Category | `False`
 
+#### Return value:
+Returns the list of jobs available.
+#### Example:
+```bash
+
+```
+### Function: `xing`
+Conducts a comprehensive search of jobs posted on Xing.com based on a free text search query.
+```bash
+xing(query)
+```
+#### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+`query` | `str` | Job Category | `False`
+
+#### Return value:
+Returns the list of jobs available.
+#### Example:
+```bash
+
+```
+### Function: `stackoverflow`
+Conducts a comprehensive search of jobs posted on StackOverflow.com based on a free text search query.
+```bash
+stackoverflow(query)
+```
+#### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+`query` | `str` | Job Category | `False`
+
+#### Return value:
+Returns the list of jobs available.
+#### Example:
+```bash
+
+```
+### Function: `monster`
+Conducts a comprehensive search of jobs posted on Monster.com based on a free text search query.
+```bash
+monster(query)
+```
+#### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+`query` | `str` | Job Category | `False`
+
+#### Return value:
+Returns the list of jobs available.
+#### Example:
+```bash
+
+```
+### Function: `linkedin`
+Conducts a comprehensive search of jobs posted on LinkedIn based on a free text search query.
+```bash
+linkedin(query)
+```
+#### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+`query` | `str` | Job Category | `False`
+
+#### Return value:
+Returns the list of jobs available.
+#### Example:
+```bash
+
+```
 

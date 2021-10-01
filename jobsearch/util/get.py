@@ -14,7 +14,7 @@ def get(url_path, params=None):
 	host = "job-search4.p.rapidapi.com"
 	url = "https://%s/%s" % (host.rstrip("/"), url_path.lstrip("/"))
 	headers = {
-		'x-rapidapi-key': os.environ["STOCK_DATA_X_RAPID_API_KEY"],
+		'x-rapidapi-key': os.environ["JOB_SEARCH_X_RAPID_API_KEY"],
 		'x-rapidapi-host': host
 	}
 	return requests.get(url, headers=headers, params=params).text

@@ -26,41 +26,41 @@ def craigslist_regions():
     return get_json("/craigslist/regions", params=None)
 
 @daily_cache
-def careerjet(query,location):
-	params = {"query": query, "location":location}
+def careerjet(query):
+	params = {"query": query}
 	return get_json("/careerjet/search", params)
 
 @daily_cache
-def dice(query,location):
-	params = {"query": query, "location":location}
+def dice(query):
+	params = {"query": query}
 	return get_json("/dice/search", params)
 
 @daily_cache
-def glassdoor(query,location):
-	params = {"query": query, "location":location}
+def glassdoor(query):
+	params = {"query": query}
 	return get_json("/glassdoor/search", params)
 
 @daily_cache
-def xing(query,location):
-	params = {"query": query, "location":location}
+def xing(query):
+	params = {"query": query}
 	return get_json("/xing/search", params)
 
 @daily_cache
-def stackoverflow(query,location):
-	params = {"query": query, "location":location}
+def stackoverflow(query):
+	params = {"query": query}
 	return get_json("/stackoverflow/search", params)
 
-@daily_cache
-def ziprecruiter(query,location):
-	params = {"query": query, "location":location}
-	return get_json("/ziprecruiter/search", params)
+#@daily_cache
+#def ziprecruiter(query,location):
+#	params = {"query": query, "location":location}
+#	return get_json("/ziprecruiter/search", params)
 
 @daily_cache
-def monster(query,state):
-	params = {"query": query, "state":state}
+def monster(query):
+	params = {"query": query}
 	return get_json("/monster/search", params)
 
 @daily_cache
-def linkedin(query,location):
-	params = {"query": query, "location":location}
+def linkedin(query):
+	params = {"query": query}
 	return get_json("/linkedin/search", params)
