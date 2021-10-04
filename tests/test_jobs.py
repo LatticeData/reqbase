@@ -79,12 +79,6 @@ def test_stackoverflow():
     response = stackoverflow(query)
     assert job_search(response)
 
-#def test_ziprecruiter():
- #   query = "penetration tester"
-  #  location = "detroit"
-   # response = ziprecruiter(query,location)
-    #assert job_search(response)
-
 def test_monster():
     query = "penetration tester"
     response = monster(query)
