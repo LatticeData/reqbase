@@ -22,7 +22,6 @@ A lightweight Python client for the [Lattice Job Search API](https://rapidapi.co
     - [Function: stackoverflow](#function-stackoverflow)
     - [Function: monster](#function-monster)
     - [Function: linkedin](#function-linkedin)
-## Overview
 
 ## Setup
 
