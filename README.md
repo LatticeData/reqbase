@@ -1,4 +1,4 @@
-# Lattice Job Search Python Client
+# Job Search Python Client
 
 A lightweight Python client for the [Lattice Job Search API](https://rapidapi.com/lattice-data-lattice-data-default/api/job-search4/).
 
