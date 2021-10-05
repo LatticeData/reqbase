@@ -25,17 +25,20 @@ def job_search(response):
 
 def test_lawjobs():
     query = "attorney"
-    response = lawjobs(query)
+    page = 1
+    response = lawjobs(query,page)
     assert job_search(response)
 	
 def test_indeed():
     query = "Software Engineer"
-    response = indeed(query)
+    page = 1
+    response = indeed(query,page)
     assert job_search(response)
 
 def test_simplehired():
     query = "consultant"
-    response = simplehired(query)
+    page = 1
+    response = simplehired(query,page)
     assert job_search(response)
 
 def test_craigslist():
@@ -55,35 +58,42 @@ def test_craigslist_regions():
 
 def test_careerjet():
     query = "penetration tester"
-    response = careerjet(query)
+    page = 1
+    response = careerjet(query,page)
     assert job_search(response)
 
 def test_dice():
     query = "penetration tester"
-    response = dice(query)
+    page = 1
+    response = dice(query,page)
     assert job_search(response)
 
 def test_glassdoor():
     query = "penetration tester"
-    response = glassdoor(query)
+    page = 1
+    response = glassdoor(query,page)
     assert job_search(response)
 
 def test_xing():
     query = "penetration tester"
-    response = xing(query)
+    page = 1
+    response = xing(query,page)
     assert job_search(response)
 
 def test_stackoverflow():
     query = "penetration tester"
-    response = stackoverflow(query)
+    page = 1
+    response = stackoverflow(query,page)
     assert job_search(response)
 
 def test_monster():
     query = "penetration tester"
-    response = monster(query)
+    state = "CA"
+    response = monster(query,state)
     assert job_search(response)
 
 def test_linkedin():
     query = "penetration tester"
-    response = linkedin(query)
+    page = 1
+    response = linkedin(query,page)
     assert job_search(response)
