@@ -3,8 +3,8 @@ import setuptools
 setuptools.setup(
     name="job-search",
     version="1.0.0",
-    description="The comprehensive job postings and requisitions aggregator.",
-    long_description="The comprehensive job search API, powered by Indeed, Simply Hired, Lawjobs.",
+    description="A lightweight Python client for the Lattice Job Search API.",
+    long_description="A lightweight Python client for the Lattice Job Search API.",
     long_description_content_type="text/markdown",
     url="https://lattice.dev/products/job-search",
     project_urls={
