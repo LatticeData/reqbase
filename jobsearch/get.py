@@ -23,7 +23,3 @@ def get_json(url_path, params=None):
 	result = json.loads(get(url_path, params=params))
 	if not result: result = {}
 	return result
-
-def get_df(url_path, params=None):
-	params["format"] = "csv"
-	return pd.read_csv(StringIO(get(url_path, params=params)), index_col=0, parse_dates=True)

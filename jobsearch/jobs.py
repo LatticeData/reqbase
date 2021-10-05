@@ -1,4 +1,4 @@
-from jobsearch.util.get import get_json
+from jobsearch.get import get_json
 
 def lawjobs(query):
 	params = {"query": query}
