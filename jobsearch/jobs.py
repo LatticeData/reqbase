@@ -18,12 +18,12 @@ def simplehired(query):
 
 @daily_cache
 def craigslist(query,region_id):
-	params = {"query": query, "region_id":region_id}
+	params = {"query": query, "region_id": region_id}
 	return get_json("/craigslist/search", params)
 
 @daily_cache
 def craigslist_regions():
-    return get_json("/craigslist/regions", params=None)
+    return get_json("/craigslist/regions")
 
 @daily_cache
 def careerjet(query):
