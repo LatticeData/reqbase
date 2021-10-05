@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="job-search",
-    version="1.5.0",
+    version="1.6.0",
     description="A lightweight Python client for the Lattice Job Search API.",
     long_description="A lightweight Python client for the Lattice Job Search API.",
     long_description_content_type="text/markdown",
@@ -15,7 +15,8 @@ setuptools.setup(
     },
     author='Lattice',
     author_email="ashkon@lattice.dev",
-    packages=setuptools.find_packages(exclude=['tests', '.circleci']),
+    py_modules = ["jobsearch"],
+    package_dir = {'': 'jobs'},
     tests_require=['pytest'],
     python_requires=">=3.7",
     classifiers=[
