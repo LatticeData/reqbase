@@ -66,6 +66,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import lawjobs
+>>> from pprint import pprint
 >>> pprint(lawjobs("attorney"))
 {
     'date': '2021-10-02T10:15:29.114525',
@@ -113,6 +114,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import indeed 
+>>> from pprint import pprint
 >>> pprint(indeed("Software Engineer"))
 {   
     'date': '2021-10-02T10:18:28.627304',
@@ -160,6 +162,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import simplehired
+>>> from pprint import pprint
 >>> pprint(simplehired("consultant"))
 {   
     'date': '2021-10-02T10:21:04.083304',
@@ -207,7 +210,8 @@ Name | Type | Description | Optional | Default Value
 Returns the list of jobs available.
 #### Example:
 ```bash
->>> from jobsearch.jobs import craigslist           
+>>> from jobsearch.jobs import craigslist     
+>>> from pprint import pprint
 >>> pprint(craigslist("researcher","newyork"))
 {   
     'date': '2021-10-02T10:25:51.278095',
@@ -259,6 +263,7 @@ Returns the list of regions available in craigslist.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import craigslist_regions
+>>> from pprint import pprint
 >>> pprint(craigslist_regions())
 {
   'date': '2021-10-02T10:28:15.391094',
@@ -301,6 +306,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import careerjet
+>>> from pprint import pprint
 >>> pprint(careerjet("penetration tester"))
 {
     'date': '2021-10-02T10:39:15.114510',
@@ -360,6 +366,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import dice
+>>> from pprint import pprint
 >>> pprint(dice("penetration tester"))
 {   
     'date': '2021-10-02T10:40:38.477352',
@@ -410,6 +417,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import glassdoor
+>>> from pprint import pprint
 >>> pprint(glassdoor("penetration tester"))
 {   
     'date': '2021-10-02T10:40:38.477352',
@@ -459,6 +467,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import xing
+>>> from pprint import pprint
 >>> pprint(xing("penetration tester"))
 {   
     'date': '2021-10-02T10:51:36.396075',      
@@ -506,6 +515,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import stackoverflow
+>>> from pprint import pprint
 >>> pprint(stackoverflow("penetration tester"))
 {   
     'date': '2021-10-02T10:52:54.784537',
@@ -556,6 +566,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import monster
+>>> from pprint import pprint
 >>> pprint(monster("penetration tester"))
 {
     'date': '2021-10-02T10:54:35.228911',
@@ -592,6 +603,7 @@ Returns the list of jobs available.
 #### Example:
 ```bash
 >>> from jobsearch.jobs import monster
+>>> from pprint import pprint
 >>> pprint(monster("penetration tester"))
 {
     'date': '2021-10-02T10:54:35.228911',
