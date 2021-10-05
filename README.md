@@ -1,6 +1,6 @@
 # Lattice Job Search Python Client
 
-The comprehensive job search API, powered by Indeed, Simply Hired, Lawjobs, Monster, Linkedin, StackOverflow, Xing, Glassdoor, Dice, Careerjet and Craigslist.
+A lightweight Python client for the [Lattice Job Search API](https://rapidapi.com/lattice-data-lattice-data-default/api/job-search4/).
 
 ## Contents
 
