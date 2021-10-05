@@ -8,7 +8,6 @@ A lightweight Python client for the [Lattice Job Search API](https://rapidapi.co
     - [Installation](#Installation)
     - [API Authentication](#API-Authentication)
     - [Dependencies](#Dependencies)
-  - [License](#license)
   - [Usage](#Usage)
     - [Function: lawjobs](#function-lawjobs)
     - [Function: indeed](#function-indeed)
@@ -21,6 +20,7 @@ A lightweight Python client for the [Lattice Job Search API](https://rapidapi.co
     - [Function: stackoverflow](#function-stackoverflow)
     - [Function: monster](#function-monster)
     - [Function: linkedin](#function-linkedin)
+  - [License](#license)
 
 ## Setup
 
@@ -49,11 +49,6 @@ These are listed in the `requirements.txt` file. Install them using pip:
 ```bash
 pip install -r requirements.txt
 ```
-
-## License
-
-`job-search` is licensed under the
-[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Usage
 ### Function: `lawjobs`
@@ -659,3 +654,7 @@ the full spectrum of identified adversarial capabilities, limited only by restri
 
 ```
 
+## License
+
+`job-search` is licensed under the
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
