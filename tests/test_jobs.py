@@ -1,6 +1,6 @@
 import pytest
 
-from jobsearch.jobs import (
+from jobs.jobsearch import (
     lawjobs,
     indeed,
     simplehired,
