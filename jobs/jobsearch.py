@@ -17,7 +17,7 @@ def craigslist(query, region_id, page=1):
 	return get_json("/craigslist/search", params)
 
 def craigslist_regions():
-    return get_json("/craigslist/regions")
+	return get_json("/craigslist/regions")
 
 def careerjet(query, page=1):
 	params = {"query": query, "page": page}
