@@ -50,11 +50,6 @@ def stackoverflow(query):
 	params = {"query": query}
 	return get_json("/stackoverflow/search", params)
 
-#@daily_cache
-#def ziprecruiter(query,location):
-#	params = {"query": query, "location":location}
-#	return get_json("/ziprecruiter/search", params)
-
 @daily_cache
 def monster(query):
 	params = {"query": query}
