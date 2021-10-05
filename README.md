@@ -62,7 +62,7 @@ lawjobs(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
@@ -118,7 +118,7 @@ indeed(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 
@@ -174,7 +174,7 @@ simplehired(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
@@ -229,7 +229,7 @@ craigslist(query, region_id, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `region_id` | `str` | Job Location | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
@@ -337,7 +337,7 @@ careerjet(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
@@ -405,7 +405,7 @@ dice(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
@@ -464,7 +464,7 @@ glassdoor(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 
@@ -522,7 +522,7 @@ xing(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 
@@ -578,7 +578,7 @@ stackoverflow(query, page)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 
@@ -637,7 +637,7 @@ monster(query, state=None, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `state` | `str` | Job location | `True` | `None` 
 `page` | `int` | Page Number | `True` | `1` 
 
@@ -683,7 +683,7 @@ linkedin(query, page=1)
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-`query` | `str` | Job Category | `False`
+`query` | `str` | A free text search query. | `False`
 `page` | `int` | Page Number | `True` | `1` 
 
 
