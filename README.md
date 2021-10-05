@@ -63,7 +63,7 @@ lawjobs(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -119,7 +119,7 @@ indeed(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 
 #### Return value:
@@ -175,7 +175,7 @@ simplehired(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -231,6 +231,7 @@ Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 `region_id` | `str` | Job Location | `False`
+`page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -337,7 +338,7 @@ careerjet(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -405,7 +406,7 @@ dice(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -464,7 +465,7 @@ glassdoor(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 
 #### Return value:
@@ -522,7 +523,7 @@ xing(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 
 #### Return value:
@@ -578,7 +579,7 @@ stackoverflow(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 
 #### Return value:
@@ -638,6 +639,7 @@ Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 `state` | `str` | Job location | `True` | `CA (California)` 
+`page` | `int` | Page Number | `True` | `1` 
 
 
 #### Return value:
@@ -682,7 +684,7 @@ linkedin(query,page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`page` | `integer` | Page Number | `True` | `1` 
+`page` | `int` | Page Number | `True` | `1` 
 
 
 #### Return value:
