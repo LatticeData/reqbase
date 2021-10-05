@@ -11,7 +11,6 @@ from jobsearch.jobs import (
     glassdoor,
     xing,
     stackoverflow,
-   # ziprecruiter,
     monster,
     linkedin
 )
