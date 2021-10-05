@@ -63,7 +63,7 @@ lawjobs(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 #### Return value:
 
@@ -119,7 +119,7 @@ indeed(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 
 #### Return value:
@@ -175,7 +175,7 @@ simplehired(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 #### Return value:
 
@@ -230,8 +230,8 @@ craigslist(query, region_id, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`region_id` | `str` | Job Location | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`region_id` | `str` | The ID and subdomain of the regional Craigslist website searched. | `False`
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 #### Return value:
 
@@ -338,7 +338,7 @@ careerjet(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 #### Return value:
 
@@ -406,7 +406,7 @@ dice(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 #### Return value:
 
@@ -465,7 +465,7 @@ glassdoor(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 
 #### Return value:
@@ -523,7 +523,7 @@ xing(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 
 #### Return value:
@@ -579,7 +579,7 @@ stackoverflow(query, page)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 
 #### Return value:
@@ -639,7 +639,7 @@ Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
 `state` | `str` | Job location | `True` | `None` 
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 
 #### Return value:
@@ -684,7 +684,7 @@ linkedin(query, page=1)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | A free text search query. | `False`
-`page` | `int` | Page Number | `True` | `1` 
+`page` | `int` | The page number of the result set returned. | `True` | `1` 
 
 
 #### Return value:
