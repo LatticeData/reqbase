@@ -4,7 +4,6 @@ A lightweight Python client for the [Lattice Job Search API](https://rapidapi.co
 
 ## Contents
 
-  - [Overview](#Overview)
   - [Setup](#Setup)
     - [Installation](#Installation)
     - [API Authentication](#API-Authentication)
