@@ -51,19 +51,25 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
 ### Function: `lawjobs`
+
 Conducts a comprehensive search of jobs posted on Lawjobs.com based on a free text search query.
 ```bash
 lawjobs(query)
 ```
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
+
 ```bash
 >>> from jobsearch.jobs import lawjobs
 >>> from pprint import pprint
@@ -99,18 +105,24 @@ Returns the list of jobs available.
     ]
 }
 ```
+
 ### Function: `indeed`
+
 Conducts a comprehensive search of jobs posted on Indeed.com based on a free text query.
 ```bash
 indeed(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
 ```bash
 >>> from jobsearch.jobs import indeed 
@@ -147,18 +159,24 @@ Returns the list of jobs available.
     ]
 }
 ```
+
 ### Function: `simplehired`
+
 Conducts a comprehensive search of jobs posted on SimplyHired.com based on a free text query.
 ```bash
 simplehired(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
 ```bash
 >>> from jobsearch.jobs import simplehired
@@ -195,19 +213,25 @@ Returns the list of jobs available.
     ]
 }
 ```
+
 ### Function: `craigslist`
+
 Conducts a comprehensive search of jobs posted on Craigslist based on a free text query.
 ```bash
 craigslist(query,region_id)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 `region_id` | `str` | Job Location | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
 ```bash
 >>> from jobsearch.jobs import craigslist     
@@ -250,17 +274,24 @@ solve technical challenges; \n\nBeneficial Skills \n•\tStrong research skills 
     ]
 }
 ```
+
 ### Function: `craigslist_regions`
+
 Returns the list of all available Craiglist region IDs.
 ```bash
 craigslist_regions()
 ```
+
 #### Arguments:
+
 None
 
 #### Return value:
-Returns the list of regions available in craigslist.
+
+Returns the list of jobs available in json format.
+
 #### Example:
+
 ```bash
 >>> from jobsearch.jobs import craigslist_regions
 >>> from pprint import pprint
@@ -292,18 +323,23 @@ Returns the list of regions available in craigslist.
 }
 ```
 ### Function: `careerjet`
+
 Conducts a comprehensive search of jobs posted on Careerjet.com based on a free text search query.
 ```bash
 careerjet(query,location)
 ```
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
+
 ```bash
 >>> from jobsearch.jobs import careerjet
 >>> from pprint import pprint
@@ -351,19 +387,26 @@ health care flexible spending accounts, and dependent day care flexible spending
     ]
 }
 ```
+
 ### Function: `dice`
+
 Conducts a comprehensive search of jobs posted on Dice.com based on a free text search query.
 ```bash
 dice(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
+
 ```bash
 >>> from jobsearch.jobs import dice
 >>> from pprint import pprint
@@ -402,18 +445,24 @@ Create reports both summarizing and detailing findings for Devops, Scrum, and Se
     ]
 }
 ```
+
 ### Function: `glassdoor`
+
 Conducts a comprehensive search of jobs posted on Glassdoor.com based on a free text search query.
 ```bash
 glassdoor(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
 ```bash
 >>> from jobsearch.jobs import glassdoor
@@ -452,18 +501,24 @@ growth, cell phone discounts, and much more! All benefits are per TestPros curre
     ]
 }
 ```
+
 ### Function: `xing`
+
 Conducts a comprehensive search of jobs posted on Xing.com based on a free text search query.
 ```bash
 xing(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
 ```bash
 >>> from jobsearch.jobs import xing
@@ -500,18 +555,24 @@ Returns the list of jobs available.
     ]
 }
 ```
+
 ### Function: `stackoverflow`
+
 Conducts a comprehensive search of jobs posted on StackOverflow.com based on a free text search query.
 ```bash
 stackoverflow(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
 ```bash
 >>> from jobsearch.jobs import stackoverflow
@@ -551,18 +612,24 @@ job postings.\nWe respect diversity and we therefore welcome all applications �
     ]
 }
 ```
+
 ### Function: `monster`
+
 Conducts a comprehensive search of jobs posted on Monster.com based on a free text search query.
 ```bash
 monster(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
 ```bash
 >>> from jobsearch.jobs import monster
@@ -588,19 +655,26 @@ and also leveraging automated tools.Education: Bachelorâ€™s degree in Compu
     ]
 }
 ```
+
 ### Function: `linkedin`
+
 Conducts a comprehensive search of jobs posted on LinkedIn based on a free text search query.
 ```bash
 linkedin(query)
 ```
+
 #### Arguments:
+
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
 
 #### Return value:
-Returns the list of jobs available.
+
+Returns the list of jobs available in json format.
+
 #### Example:
+
 ```bash
 >>> from jobsearch.jobs import monster
 >>> from pprint import pprint
