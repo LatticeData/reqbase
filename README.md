@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 Conducts a comprehensive search of jobs posted on Lawjobs.com based on a free text search query.
 ```bash
-lawjobs(query,page)
+lawjobs(query, page)
 ```
 #### Arguments:
 
@@ -111,7 +111,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on Indeed.com based on a free text query.
 ```bash
-indeed(query,page)
+indeed(query, page)
 ```
 
 #### Arguments:
@@ -167,7 +167,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on SimplyHired.com based on a free text query.
 ```bash
-simplehired(query,page)
+simplehired(query, page)
 ```
 
 #### Arguments:
@@ -222,7 +222,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on Craigslist based on a free text query.
 ```bash
-craigslist(query,region_id)
+craigslist(query, region_id)
 ```
 
 #### Arguments:
@@ -331,7 +331,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on Careerjet.com based on a free text search query.
 ```bash
-careerjet(query,page)
+careerjet(query, page)
 ```
 #### Arguments:
 
@@ -398,7 +398,7 @@ health care flexible spending accounts, and dependent day care flexible spending
 
 Conducts a comprehensive search of jobs posted on Dice.com based on a free text search query.
 ```bash
-dice(query,page)
+dice(query, page)
 ```
 
 #### Arguments:
@@ -457,7 +457,7 @@ Create reports both summarizing and detailing findings for Devops, Scrum, and Se
 
 Conducts a comprehensive search of jobs posted on Glassdoor.com based on a free text search query.
 ```bash
-glassdoor(query,page)
+glassdoor(query, page)
 ```
 
 #### Arguments:
@@ -515,7 +515,7 @@ growth, cell phone discounts, and much more! All benefits are per TestPros curre
 
 Conducts a comprehensive search of jobs posted on Xing.com based on a free text search query.
 ```bash
-xing(query,page)
+xing(query, page)
 ```
 
 #### Arguments:
@@ -571,7 +571,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on StackOverflow.com based on a free text search query.
 ```bash
-stackoverflow(query,page)
+stackoverflow(query, page)
 ```
 
 #### Arguments:
@@ -630,7 +630,7 @@ job postings.\nWe respect diversity and we therefore welcome all applications �
 
 Conducts a comprehensive search of jobs posted on Monster.com based on a free text search query.
 ```bash
-monster(query,state)
+monster(query, state)
 ```
 
 #### Arguments:
@@ -638,7 +638,7 @@ monster(query,state)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
-`state` | `str` | Job location | `True` | `CA (California)` 
+`state` | `str` | Job location | `True` | `CA` 
 `page` | `int` | Page Number | `True` | `1` 
 
 
@@ -676,7 +676,7 @@ and also leveraging automated tools.Education: Bachelorâ€™s degree in Compu
 
 Conducts a comprehensive search of jobs posted on LinkedIn based on a free text search query.
 ```bash
-linkedin(query,page)
+linkedin(query, page)
 ```
 
 #### Arguments:
