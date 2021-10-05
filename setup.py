@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="job-search",
-    version="1.6.0",
+    version="1.0.0",
     description="A lightweight Python client for the Lattice Job Search API.",
     long_description="A lightweight Python client for the Lattice Job Search API.",
     long_description_content_type="text/markdown",

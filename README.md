@@ -56,13 +56,14 @@ pip install -r requirements.txt
 
 Conducts a comprehensive search of jobs posted on Lawjobs.com based on a free text search query.
 ```bash
-lawjobs(query)
+lawjobs(query,page)
 ```
 #### Arguments:
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -71,7 +72,7 @@ Returns the list of jobs available in json format.
 #### Example:
 
 ```bash
->>> from jobsearch.jobs import lawjobs
+>>> from jobsearch import lawjobs
 >>> from pprint import pprint
 >>> pprint(lawjobs("attorney"))
 {
@@ -110,7 +111,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on Indeed.com based on a free text query.
 ```bash
-indeed(query)
+indeed(query,page)
 ```
 
 #### Arguments:
@@ -118,6 +119,8 @@ indeed(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
+
 
 #### Return value:
 
@@ -125,7 +128,7 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch.jobs import indeed 
+>>> from jobsearch import indeed 
 >>> from pprint import pprint
 >>> pprint(indeed("Software Engineer"))
 {   
@@ -164,7 +167,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on SimplyHired.com based on a free text query.
 ```bash
-simplehired(query)
+simplehired(query,page)
 ```
 
 #### Arguments:
@@ -172,6 +175,7 @@ simplehired(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -179,7 +183,7 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch.jobs import simplehired
+>>> from jobsearch import simplehired
 >>> from pprint import pprint
 >>> pprint(simplehired("consultant"))
 {   
@@ -234,7 +238,7 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch.jobs import craigslist     
+>>> from jobsearch import craigslist     
 >>> from pprint import pprint
 >>> pprint(craigslist("researcher","newyork"))
 {   
@@ -293,7 +297,7 @@ Returns the list of jobs available in json format.
 #### Example:
 
 ```bash
->>> from jobsearch.jobs import craigslist_regions
+>>> from jobsearch import craigslist_regions
 >>> from pprint import pprint
 >>> pprint(craigslist_regions())
 {
@@ -326,13 +330,14 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on Careerjet.com based on a free text search query.
 ```bash
-careerjet(query,location)
+careerjet(query,page)
 ```
 #### Arguments:
 
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -341,7 +346,7 @@ Returns the list of jobs available in json format.
 #### Example:
 
 ```bash
->>> from jobsearch.jobs import careerjet
+>>> from jobsearch import careerjet
 >>> from pprint import pprint
 >>> pprint(careerjet("penetration tester"))
 {
@@ -392,7 +397,7 @@ health care flexible spending accounts, and dependent day care flexible spending
 
 Conducts a comprehensive search of jobs posted on Dice.com based on a free text search query.
 ```bash
-dice(query)
+dice(query,page)
 ```
 
 #### Arguments:
@@ -400,6 +405,7 @@ dice(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
 
 #### Return value:
 
@@ -408,7 +414,7 @@ Returns the list of jobs available in json format.
 #### Example:
 
 ```bash
->>> from jobsearch.jobs import dice
+>>> from jobsearch import dice
 >>> from pprint import pprint
 >>> pprint(dice("penetration tester"))
 {   
@@ -450,7 +456,7 @@ Create reports both summarizing and detailing findings for Devops, Scrum, and Se
 
 Conducts a comprehensive search of jobs posted on Glassdoor.com based on a free text search query.
 ```bash
-glassdoor(query)
+glassdoor(query,page)
 ```
 
 #### Arguments:
@@ -458,6 +464,8 @@ glassdoor(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
+
 
 #### Return value:
 
@@ -465,7 +473,7 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch.jobs import glassdoor
+>>> from jobsearch import glassdoor
 >>> from pprint import pprint
 >>> pprint(glassdoor("penetration tester"))
 {   
@@ -506,7 +514,7 @@ growth, cell phone discounts, and much more! All benefits are per TestPros curre
 
 Conducts a comprehensive search of jobs posted on Xing.com based on a free text search query.
 ```bash
-xing(query)
+xing(query,page)
 ```
 
 #### Arguments:
@@ -514,6 +522,8 @@ xing(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
+
 
 #### Return value:
 
@@ -521,7 +531,7 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch.jobs import xing
+>>> from jobsearch import xing
 >>> from pprint import pprint
 >>> pprint(xing("penetration tester"))
 {   
@@ -560,7 +570,7 @@ Returns the list of jobs available in json format.
 
 Conducts a comprehensive search of jobs posted on StackOverflow.com based on a free text search query.
 ```bash
-stackoverflow(query)
+stackoverflow(query,page)
 ```
 
 #### Arguments:
@@ -568,6 +578,8 @@ stackoverflow(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
+
 
 #### Return value:
 
@@ -575,7 +587,7 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch.jobs import stackoverflow
+>>> from jobsearch import stackoverflow
 >>> from pprint import pprint
 >>> pprint(stackoverflow("penetration tester"))
 {   
@@ -617,7 +629,7 @@ job postings.\nWe respect diversity and we therefore welcome all applications �
 
 Conducts a comprehensive search of jobs posted on Monster.com based on a free text search query.
 ```bash
-monster(query)
+monster(query,state)
 ```
 
 #### Arguments:
@@ -625,6 +637,8 @@ monster(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`state` | `str` | Job location | `True` | `CA (California)` 
+
 
 #### Return value:
 
@@ -632,7 +646,7 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch.jobs import monster
+>>> from jobsearch import monster
 >>> from pprint import pprint
 >>> pprint(monster("penetration tester"))
 {
@@ -660,7 +674,7 @@ and also leveraging automated tools.Education: Bachelorâ€™s degree in Compu
 
 Conducts a comprehensive search of jobs posted on LinkedIn based on a free text search query.
 ```bash
-linkedin(query)
+linkedin(query,page)
 ```
 
 #### Arguments:
@@ -668,6 +682,8 @@ linkedin(query)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `query` | `str` | Job Category | `False`
+`page` | `integer` | Page Number | `True` | `1` 
+
 
 #### Return value:
 
@@ -676,31 +692,8 @@ Returns the list of jobs available in json format.
 #### Example:
 
 ```bash
->>> from jobsearch.jobs import monster
+>>> from jobsearch import linkedin
 >>> from pprint import pprint
->>> pprint(monster("penetration tester"))
-{
-    'date': '2021-10-02T10:54:35.228911',
-    'jobs': [
-        {
-            'city': 'Chesterfield',
-            'company_name': 'Mastech',
-            'country': 'US',
-            'date_posted': '2021-10-01T05:24:24.173Z',
-            'description': 'Job Description:Mastech Digital provides digital and mainstream technology staff as well as Digital Transformation Services for all American Corporations. We are currently seeking a Vulnerability/Penetration Tester for our client in the Telecom domain. We value our professionals, providing comprehensive benefits and the opportunity for growth. This is a Contract position and the client is looking for someone to start immediately.Duration: 12 Months ContractLocation: Chesterfield, VA (100% Remote)Role: Vulnerability/Penetration TesterPrimary Skills: Penetration Testing, Vulnerability, Vulnerability Assessments, Vulnerabilities, Security TestingRole Description: The Vulnerability/Penetration Tester must have at least 5+ years of experience. As the Penetration Testing professional, you should be proficient in vulnerability assessments, penetration testing, and professionally relaying technical vulnerabilities and their impact to technical and non-technical customers.Required Experience:In this role, you would perform various penetration testing assessments for enterprise customers as an individual contributor or as part of a team delivering the assessment. The assessments that would be delivered would either be remote or onsite at a customer location.For the remote assessments, you would telecommute from your home office connecting into attack lab to perform assessments, or for internal assessments travel to the designated customer locations.\xa0You should be comfortable identifying vulnerabilities, exploiting vulnerabilities, performing post-exploitation activities, and explaining the path to compromise to external and internal stakeholders. You should have experience performing these activities manually 
-and also leveraging automated tools.Education: Bachelorâ€™s degree in Computer Science, Electrical/Electronic Engineering, Information Technology or another related field or EquivalentExperience: Minimum 5+ yearsRelocation: This position will not cover relocation expensesTravel: NoLocal Preferred: YesNote: Must be able to work on a W2 basis\xa0Recruiter Name: Sachin KumarRecruiter Phone: T: (412) 226-0751 Ext: 2074/C: (412) 968-6186Equal Employment OpportunityMinimum Education Required: Bachelor\n\nYears of Experience Required: More than 5 years\n\nExpected Travel Time: None',
-            'detail_url': 'http://jobview.monster.com/Vulnerability-Penetration-Tester-Job-Chesterfield-VA-US-231840905.aspx',
-            'location': 'Chesterfield',
-            'source': 'monster.com',
-            'state': 'VA',
-            'title': 'Vulnerability/Penetration Tester',
-        },
-    ],
-    'status': 'success',
-}
->>> >>> linkedin
-KeyboardInterrupt
->>> from jobsearch.jobs import linkedin
 >>> pprint(linkedin("penetration tester"))
 {   
     'date': '2021-10-02T10:57:12.809599',
