@@ -106,7 +106,7 @@ Returns the list of jobs available.
 }
 ```
 ### Function: `indeed`
-Conducts a comprehensive search of jobs posted in Indeed based on a text query.
+Conducts a comprehensive search of jobs posted on Indeed.com based on a free text query.
 ```bash
 indeed(query)
 ```
@@ -153,7 +153,7 @@ Returns the list of jobs available.
 }
 ```
 ### Function: `simplehired`
-Search for job postings on SimplyHired based on a text query.
+Conducts a comprehensive search of jobs posted on SimplyHired.com based on a free text query.
 ```bash
 simplehired(query)
 ```
@@ -200,7 +200,7 @@ Returns the list of jobs available.
 }
 ```
 ### Function: `craigslist`
-Search for jobs postings on Craigslist based on a text query.
+Conducts a comprehensive search of jobs posted on Craigslist based on a free text query.
 ```bash
 craigslist(query,region_id)
 ```
@@ -254,7 +254,7 @@ solve technical challenges; \n\nBeneficial Skills \n•\tStrong research skills 
 }
 ```
 ### Function: `craigslist_regions`
-For the list of regions for craigslist.
+Returns the list of all available Craiglist region IDs.
 ```bash
 craigslist_regions()
 ```
