@@ -17,10 +17,8 @@ from jobs.jobsearch import (
 
 def job_search(response):
 	return (
-		(response["status"] == "success")
-		and "jobs" in response
-		and isinstance(response["jobs"], list)
-		and len(response["jobs"]) > 1
+		isinstance(response, list)
+		and len(response) > 1
 	)
 
 def test_lawjobs():
@@ -50,10 +48,8 @@ def test_craigslist():
 def test_craigslist_regions():
     response = craigslist_regions()
     assert (
-        	(response["status"] == "success")
-            and "regions" in response
-            and isinstance(response["regions"], list)
-            and len(response["regions"]) > 20
+            isinstance(response, list)
+            and len(response) > 20
             )
 
 def test_careerjet():

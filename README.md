@@ -73,11 +73,8 @@ Returns the list of jobs available in json format.
 
 ```bash
 >>> from jobsearch import lawjobs
->>> from pprint import pprint
 >>> pprint(lawjobs("attorney"))
-{
-    'date': '2021-10-02T10:15:29.114525',
-    'jobs': [
+[
         {
             'city': 'New York',
             'company_name': None,
@@ -103,8 +100,8 @@ Returns the list of jobs available in json format.
             'title': 'Assistant Chief, Special Civil Part',
         },
         ...
-    ]
-}
+]
+
 ```
 
 ### Function: `indeed`
@@ -129,11 +126,8 @@ Returns the list of jobs available in json format.
 #### Example:
 ```bash
 >>> from jobsearch import indeed 
->>> from pprint import pprint
 >>> pprint(indeed("Software Engineer"))
-{   
-    'date': '2021-10-02T10:18:28.627304',
-    'jobs': [
+[
         {
             'city': None,
             'company_name': None,
@@ -159,8 +153,7 @@ Returns the list of jobs available in json format.
             'title': 'Associate Software Engineer (entry-level)',
         },
         ...
-    ]
-}
+]
 ```
 
 ### Function: `simplehired`
@@ -184,11 +177,8 @@ Returns the list of jobs available in json format.
 #### Example:
 ```bash
 >>> from jobsearch import simplehired
->>> from pprint import pprint
 >>> pprint(simplehired("consultant"))
-{   
-    'date': '2021-10-02T10:21:04.083304',
-    'jobs': [
+[
         {
             'city': None,
             'company_name': 'Roessel Joy',
@@ -214,8 +204,7 @@ Returns the list of jobs available in json format.
             'title': 'College Admissions Consultant',
         },
         ...
-    ]
-}
+]
 ```
 
 ### Function: `craigslist`
@@ -239,12 +228,9 @@ Returns the list of jobs available in json format.
 
 #### Example:
 ```bash
->>> from jobsearch import craigslist     
->>> from pprint import pprint
+>>> from jobsearch import craigslist
 >>> pprint(craigslist("researcher","newyork"))
-{   
-    'date': '2021-10-02T10:25:51.278095',
-    'jobs': [
+[
         {
             'city': 'fairfield county',
             'company_name': None,
@@ -276,8 +262,7 @@ solve technical challenges; \n\nBeneficial Skills \n•\tStrong research skills 
             'title': 'Technical Literature Researcher',
         },
         ...
-    ]
-}
+]
 ```
 
 ### Function: `craigslist_regions`
@@ -299,12 +284,8 @@ Returns the list of jobs available in json format.
 
 ```bash
 >>> from jobsearch import craigslist_regions
->>> from pprint import pprint
 >>> pprint(craigslist_regions())
-{
-  'date': '2021-10-02T10:28:15.391094',
-  'status': 'success',
-  'regions': [
+[
         {
             'city': 'Salem',
             'country': 'United States',
@@ -324,8 +305,7 @@ Returns the list of jobs available in json format.
             'state': 'Ohio',
         },
         ...
-  ]
-}
+]
 ```
 ### Function: `careerjet`
 
@@ -348,11 +328,8 @@ Returns the list of jobs available in json format.
 
 ```bash
 >>> from jobsearch import careerjet
->>> from pprint import pprint
 >>> pprint(careerjet("penetration tester"))
-{
-    'date': '2021-10-02T10:39:15.114510',
-    'jobs': [
+[
         {
             'city': 'Morrisville',
             'company_name': 'Lenovo',
@@ -390,8 +367,7 @@ health care flexible spending accounts, and dependent day care flexible spending
             'title': 'Senior Specialist, Application Penetration Tester I',
         },
         ...
-    ]
-}
+]
 ```
 
 ### Function: `dice`
@@ -416,11 +392,8 @@ Returns the list of jobs available in json format.
 
 ```bash
 >>> from jobsearch import dice
->>> from pprint import pprint
 >>> pprint(dice("penetration tester"))
-{   
-    'date': '2021-10-02T10:40:38.477352',
-    'jobs': [
+[
         {
             'city': 'Ashburn',
             'company_name': 'Leidos',    
@@ -449,8 +422,7 @@ Create reports both summarizing and detailing findings for Devops, Scrum, and Se
             'title': 'Penetration Tester',
         },
         ...
-    ]
-}
+]
 ```
 
 ### Function: `glassdoor`
@@ -475,11 +447,8 @@ Returns the list of jobs available in json format.
 #### Example:
 ```bash
 >>> from jobsearch import glassdoor
->>> from pprint import pprint
 >>> pprint(glassdoor("penetration tester"))
-{   
-    'date': '2021-10-02T10:40:38.477352',
-    'jobs': [
+[
       {
             'city': None,
             'company_name': 'TestPros3.1â\x98\x85',
@@ -507,8 +476,7 @@ growth, cell phone discounts, and much more! All benefits are per TestPros curre
             'title': 'Penetration Tester',
         },
         ...
-    ]
-}
+]
 ```
 
 ### Function: `xing`
@@ -533,11 +501,8 @@ Returns the list of jobs available in json format.
 #### Example:
 ```bash
 >>> from jobsearch import xing
->>> from pprint import pprint
 >>> pprint(xing("penetration tester"))
-{   
-    'date': '2021-10-02T10:51:36.396075',      
-    'jobs': [
+[
         {
             'city': 'Köln',
             'company_name': 'Stolzberger GmbH',
@@ -563,8 +528,7 @@ Returns the list of jobs available in json format.
             'title': 'IT-Security Spezialist (m/w/d) in Düsseldorf',
         },
         ...
-    ]
-}
+]
 ```
 
 ### Function: `stackoverflow`
@@ -589,11 +553,8 @@ Returns the list of jobs available in json format.
 #### Example:
 ```bash
 >>> from jobsearch import stackoverflow
->>> from pprint import pprint
 >>> pprint(stackoverflow("penetration tester"))
-{   
-    'date': '2021-10-02T10:52:54.784537',
-    'jobs': [
+[
         {
             'city': 'Berlin',
             'company_name': 'STRATO AG',
@@ -622,8 +583,7 @@ job postings.\nWe respect diversity and we therefore welcome all applications �
             'title': 'BurdaForward',
         },
       ...
-    ]
-}
+]
 ```
 
 ### Function: `monster`
@@ -649,11 +609,8 @@ Returns the list of jobs available in json format.
 #### Example:
 ```bash
 >>> from jobsearch import monster
->>> from pprint import pprint
 >>> pprint(monster("penetration tester"))
-{
-    'date': '2021-10-02T10:54:35.228911',
-    'jobs': [
+[
         {
             'city': 'Chesterfield',
             'company_name': 'Mastech',
@@ -668,8 +625,7 @@ and also leveraging automated tools.Education: Bachelorâ€™s degree in Compu
             'title': 'Vulnerability/Penetration Tester',
         },
       ...
-    ]
-}
+]
 ```
 
 ### Function: `linkedin`
@@ -695,11 +651,8 @@ Returns the list of jobs available in json format.
 
 ```bash
 >>> from jobsearch import linkedin
->>> from pprint import pprint
 >>> pprint(linkedin("penetration tester"))
-{   
-    'date': '2021-10-02T10:57:12.809599',
-    'jobs': [
+[
         {
             'city': 'Palm Bay',
             'company_name': 'L3Harris Technologies',
@@ -730,9 +683,7 @@ the full spectrum of identified adversarial capabilities, limited only by restri
             'title': 'Cyber Space Operator',
         },
       ...
-    ]
-}
-
+]
 ```
 
 ## License
